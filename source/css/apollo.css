@@ -242,7 +242,7 @@ body {
 body {
     margin: 0;
     color: #34495e;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     background-color: #fff;
     font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif
@@ -452,21 +452,35 @@ header .nav-list-item a {
     font-weight: bold
 }
 
+.post-content h3:before {
+    content: "##";
+    color: #42b983;
+    position: absolute;
+    left: -1.3em;
+    top: -4px;
+    font-size: 1.2em;
+    font-weight: bold
+}
+
 .post-content h4:before,
 .post-content h5:before,
 .post-content h6:before {
     content: ""
 }
 
-.post-content h2,
+.post-content h2 {
+    font-size: 22px;
+    box-shadow:-10px 15px 10px -15px #ccc;
+}
+
 .post-content h3 {
-    font-size: 22px
+    font-size: 19px
 }
 
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    font-size: 18px
+    font-size: 17px
 }
 
 .post-content a {
@@ -477,7 +491,8 @@ header .nav-list-item a {
 .post-content blockquote {
     margin: 2em 0;
     padding-left: 20px;
-    border-left: 4px solid #42b983
+    border-left: 4px solid #42b983;
+    background-color: #ECF8F2;
 }
 
 .post-content img {
@@ -540,13 +555,14 @@ code,
 pre {
     font-size: 0.8em;
     background-color: #f8f8f8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
     font-family: 'Roboto Mono', Monaco, courier, monospace
 }
 
 .highlight {
     position: relative;
     margin: 1em 0;
-    border-radius: 2px;
+    border-radius: 5px;
     line-height: 1.1em;
     background-color: #f8f8f8;
     overflow-x: auto
