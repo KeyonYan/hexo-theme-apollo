@@ -37,6 +37,12 @@ mixin postList()
                     != item.title
         - })
 
+//- Categories Page
+mixin postCategories()
+    .categories
+        h2.categories-title #{"Categories"}
+        div !{list_categories({show_count: false})}
+
 //- Post Page
 mixin post(item)
     .post

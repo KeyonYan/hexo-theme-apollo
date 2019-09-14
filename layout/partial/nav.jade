@@ -6,12 +6,5 @@ ul.nav.nav-list
             - var act = !re.test(value) && "/"+page.current_url === value
             a.nav-list-link(class={active: act} href=url_for(value) target=tar)
                 != key.toUpperCase()
-    case theme.categories
-        when true
-            li.nav-list-item
-                each value, key in site.categories
-                    - var re = /^(http|https):\/\/*/gi;
-                    - var tar = re.test(value) ? "_blank" : "_self"
-                    - var act = !re.test(value) && "/"+page.current_url === value
-                    a.nav-list-link(class={active: act} target=tar)!= value
-                    a.nav-list-link(class={active: act} target=tar)!= key
+
+

@@ -911,6 +911,17 @@ footer .copyright a:hover {
 }
 
 /* categories */
-#categories:hover {
-	background-color:yellow;
+.categories div ul li a:hover {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.categories {
+    max-width: 500px;
+    margin: 5em auto
+}
+
+.categories div ul li a {
+    font-size: 18px;
+    line-height: 1.4
 }
