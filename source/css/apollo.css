@@ -491,6 +491,9 @@ header .nav-list-item a {
 .post-content blockquote {
     margin: 2em 0;
     padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
     border-left: 4px solid #42b983;
     background-color: #ECF8F2;
 }
@@ -825,7 +828,7 @@ main.container {
 
 @media screen and (min-width: 700px) {
     .wrap {
-        width: 700px;
+        width: 780px;
         margin: 0 auto
     }
 
@@ -905,4 +908,9 @@ footer .copyright a:hover {
     src: url("../font/sourcesanspro.woff2") format("woff2"), url("../font/sourcesanspro.woff") format("woff");
     font-weight: normal;
     font-style: normal
+}
+
+/* categories */
+#categories:hover {
+	background-color:yellow;
 }

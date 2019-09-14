@@ -2,7 +2,11 @@ menu:
     Blog: /
     Archive: /archives/
     GitHub: https://github.com/KeyonYan
-    Rss: /atom.xml
+    Gitee: https://gitee.com/YanKeyon
+    # Rss: /atom.xml
+
+# 是否在Nav上显示文章分类
+categories: true
 
 favicon: /favicon.png
 logo: /favicon.png
